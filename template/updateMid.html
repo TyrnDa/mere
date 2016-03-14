@@ -1,0 +1,102 @@
+<div id="showMenu" class="showMenu page-background row">
+    <nav class="page-nav col-sm-12 col-md-12 col-lg-12">
+        <ul class="page-black-nav">
+            <li>
+                <a href="javascript:void(0)"><i class="fa fa-fire font-size18 padding-r-5"></i>导航 <i class="fa fa-sort-desc"></i></a>
+                <div class="page-nav-select page-nav-select1">
+                    <div class="page-nav-select-pull"><a href="#">导航下拉选项</a></div>
+                    <div class="page-nav-select-pull"><a href="#">导航下拉选项</a></div>
+                    <div class="page-nav-select-pull"><a href="#">导航下拉选项</a></div>
+                    <div class="page-nav-select-pull"><a href="#">导航下拉选项</a></div>
+                    <div class="page-nav-select-pull"><a href="#">导航下拉选项</a></div>
+                    <div class="page-nav-select-pull"><a href="#">导航下拉选项</a></div>
+                    <div class="page-nav-select-pull"><a href="#">导航下拉选项</a></div>
+                </div>
+            </li>
+            <li><a href="#"><i class="fa fa-close font-size18 padding-r-5"></i>删除</a></li>
+            <li><a href="#"><i class="fa fa-edit font-size18 padding-r-5"></i>放弃</a></li>
+            <li data-toggle="modal" data-target="#addMidModal"><a href="javascript:void(0)"><i class="fa fa-paw font-size18 padding-r-5"></i>添加商编</a></li>
+        </ul>
+    </nav>
+
+    <section class="page-section col-sm-12 col-md-12 col-lg-12 padding-b-100">
+        <h2 class="col-xs-12 col-sm-12 col-md-12 col-lg-12 padding-b-20">商编管理</h2>
+
+        <!--<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 padding-b-30">
+            页面内部标题
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 padding-b-10 inside-page-title">
+                <span>添加商编</span>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <i class="col-xs-12 col-sm-12 col-md-9 col-lg-7"></i>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-5 alignStyle font-color-blue">
+                <div>
+                    <span>参与授信的商户编号MID（多个商标必须用英文逗号隔开）</span>
+                </div>
+                <input class="col-xs-12 col-sm-11 col-md-11 col-lg-11" type="text" value="12212121221">
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-12"></div>
+        </div>-->
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 padding-b-30">
+            <!--页面内部标题-->
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 padding-b-10 inside-page-title">
+                <span>商编</span>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <i class="col-xs-12 col-sm-12 col-md-9 col-lg-7"></i>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-lg-3 alignStyle font-color-blue checkbox-hull">
+                <input id="mid1" class="col-sm-1 col-md-1 col-lg-1" type="checkbox"/>
+                <label for="mid1" class="col-sm-11 col-md-11 col-lg-11 cursor">1231231231231212321</label>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-12"></div>
+
+            <div class="col-sm-12 col-md-6 col-lg-3 alignStyle font-color-blue checkbox-hull">
+                <input id="mid2" class="col-sm-1 col-md-1 col-lg-1" type="checkbox"/>
+                <label for="mid2" class="col-sm-11 col-md-11 col-lg-11 cursor">1231231231231212321</label>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-12"></div>
+
+            <div class="col-sm-12 col-md-6 col-lg-3 alignStyle font-color-blue checkbox-hull">
+                <input id="mid3" class="col-sm-1 col-md-1 col-lg-1" type="checkbox"/>
+                <label for="mid3" class="col-sm-11 col-md-11 col-lg-11 cursor">1231231231231212321</label>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-12"></div>
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center padding-t-50">
+            <button type="button" class="btn btn-gray btn-shadow">保存页面</button>
+        </div>
+
+    </section>
+</div>
+
+
+<!--添加商编模态框 #addMidModal-->
+<div id="addMidModal" class="modal fade" role="dialog" aria-labelledby="gridSystemModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h3 class="modal-title" id="gridSystemModalLabel">添加商编</h3>
+            </div>
+            <div class="modal-body">
+                <div class="addMidModalBody alignStyle">
+                    <div class="padding-b-5">
+                        <span>商户编号：</span>
+                    </div>
+                    <input class="col-xs-12 col-sm-11 col-md-11 col-lg-11" type="text" value="12212121221">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-redGray btn-shadow" data-dismiss="modal">关闭</button>
+                <button type="button" class="btn btn-griege btn-shadow" data-dismiss="modal">添加</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div>
+</div>
+
+

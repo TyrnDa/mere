@@ -1,0 +1,1314 @@
+<div id="showMenu" class="showMenu page-background row">
+    <nav class="page-nav col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <ul class="page-black-nav">
+            <li>
+                <a href="javascript:void(0)"><i class="fa fa-desktop font-size18 padding-r-5"></i>导航 <i class="fa fa-sort-desc"></i></a>
+                <div class="page-nav-select">
+                    <div class="page-nav-select-pull"><a href="#">导航下拉选项</a></div>
+                    <div class="page-nav-select-pull"><a href="#">导航下拉选项</a></div>
+                    <div class="page-nav-select-pull"><a href="#">导航下拉选项</a></div>
+                    <div class="page-nav-select-pull"><a href="#">导航下拉选项</a></div>
+                    <div class="page-nav-select-pull"><a href="#">导航下拉选项</a></div>
+                    <div class="page-nav-select-pull"><a href="#">导航下拉选项</a></div>
+                    <div class="page-nav-select-pull"><a href="#">导航下拉选项</a></div>
+                </div>
+            </li>
+            <li><a href="javascript:void(0)"><i class="fa fa-close font-size18 padding-r-5"></i>删除</a></li>
+            <li><a href="javascript:void(0)"><i class="fa fa-edit font-size18 padding-r-5"></i>放弃</a></li>
+            <li data-toggle="modal" data-target="#addMidModal"><a href="javascript:void(0)"><i class="fa fa-paw font-size18 padding-r-5"></i>添加商编</a></li>
+        </ul>
+    </nav>
+
+    <div class="page-section col-xs-12 col-sm-12 col-md-12 col-lg-12 padding-tb-30">
+        <div class="col-xs-12 col-xs-12 col-sm-12 col-md-12 col-lg-12 midInfoMid">
+            <!--页面内部标题-->
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 padding-b-10 inside-page-title">
+                <span>商编</span>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <i class="col-xs-12 col-sm-12 col-md-9 col-lg-7"></i>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-7 col-lg-5 alignStyle font-color-blue checkbox-hull">
+                <input id="mid1" class="col-sm-1 col-md-1 col-lg-1" type="checkbox"/>
+                <label for="mid1" class="col-sm-7 col-md-6 col-lg-6 cursor">1231231231231212321</label>
+                <input data-toggle="modal" data-target="#midSingleModal" class="btn btn-xs btn-griege btn-shadow
+                    col-sm-1 col-md-2 col-lg-2" type="button" value="查看"/>
+
+                <input data-toggle="modal" data-target="#midVerifyModal" class="btn btn-xs btn-spearmint btn-shadow
+                    col-sm-1 col-md-2 col-lg-2 margin-l-5" type="button" value="验证"/>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-12"></div>
+
+            <div class="col-xs-12 col-sm-12 col-md-7 col-lg-5 alignStyle font-color-blue checkbox-hull">
+                <input id="mid2" class="col-sm-1 col-md-1 col-lg-1" type="checkbox"/>
+                <label for="mid2" class="col-sm-7 col-md-6 col-lg-6 cursor">1231231231231212321</label>
+                <input data-toggle="modal" data-target="#midSingleModal" class="btn btn-xs btn-griege btn-shadow
+                    col-sm-1 col-md-2 col-lg-2" type="button" value="查看"/>
+
+                <input data-toggle="modal" data-target="#midVerifyModal" class="btn btn-xs btn-spearmint btn-shadow
+                    col-sm-1 col-md-2 col-lg-2 margin-l-5" type="button" value="验证"/>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-12"></div>
+
+            <div class="col-xs-12 col-sm-12 col-md-7 col-lg-5 alignStyle font-color-blue checkbox-hull">
+                <input id="mid3" class="col-sm-1 col-md-1 col-lg-1" type="checkbox"/>
+                <label for="mid3" class="col-sm-7 col-md-6 col-lg-6 cursor">1231231231231212321</label>
+                <input data-toggle="modal" data-target="#midSingleModal" class="btn btn-xs btn-griege btn-shadow
+                    col-sm-1 col-md-2 col-lg-2" type="button" value="查看"/>
+
+                <input data-toggle="modal" data-target="#midVerifyModal" class="btn btn-xs btn-spearmint btn-shadow
+                    col-sm-1 col-md-2 col-lg-2 margin-l-5" type="button" value="验证"/>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-12"></div>
+        </div>
+
+
+        <!--footer标签里的a标签的ID命名要和弹出层相呼应。-->
+        <section class="infoPopup">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 padding-b-10 inside-page-title">
+                <span>统计</span>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <i class="col-xs-12 col-sm-12 col-md-9 col-lg-7"></i>
+                </div>
+            </div>
+            <ul class="cd-pricing col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <li>
+                    <header class="cd-pricing-header">
+                        <h2>商户授信信息</h2>
+
+                        <div class="cd-price">
+                            <span>老K科技有限公司：</span>
+                            <span>12312</span>
+                        </div>
+                    </header> <!-- .cd-pricing-header -->
+
+                    <div class="cd-pricing-features">
+                        <ul class="Center-l popup-list-info">
+                            <li><em>商户授信申请编号：<span>42897</span></em></li>
+                            <li><em>名称：<span>宿迁市大友汽车服务中心</span></em></li>
+                            <li><em>授信状态：<span>success</span></em></li>
+                            <li><em>综合标准额度：<span>31,000.00</span></em></li>
+                        </ul>
+                    </div> <!-- .cd-pricing-features -->
+
+                    <footer class="cd-pricing-footer">
+                        <a id="popup1" href="javascript:void(0)">查看</a>
+                    </footer> <!-- .cd-pricing-footer -->
+                </li>
+
+                <!--<li>
+                    <header class="cd-pricing-header">
+                        <h2>商编授信信息</h2>
+
+                        <div class="cd-price">
+                            <span>喔</span>
+                            <span>O.O</span>
+                        </div>
+                    </header> &lt;!&ndash; .cd-pricing-header &ndash;&gt;
+
+                    <div class="cd-pricing-features">
+                        <ul class="Center-l popup-list-info">
+                            <li><em>商编数量：<span>4个</span></em></li>
+                            <li><em>啊啊啊啊：<span>哈</span></em></li>
+                            <li><em>啊啊啊啊：<span>哈</span></em></li>
+                            <li><em>啊啊啊啊：<span>哈</span></em></li>
+                        </ul>
+                    </div> &lt;!&ndash; .cd-pricing-features &ndash;&gt;
+
+                    <footer class="cd-pricing-footer">
+                        <a id="popup2" href="javascript:void(0)">查看</a>
+                    </footer> &lt;!&ndash; .cd-pricing-footer &ndash;&gt;
+                </li>-->
+                <li>
+                    <header class="cd-pricing-header">
+                        <h2>基础额度</h2>
+
+                        <div class="cd-price">
+                            <span>...</span>
+                            <span>month</span>
+                        </div>
+                    </header> <!-- .cd-pricing-header -->
+
+                    <div class="cd-pricing-features">
+                        <ul class="Center-l popup-list-info">
+                            <li><em>额度：</em><span>31231</span></li>
+                            <li><em>商编</em></li>
+                            <li><em>终端</em></li>
+                            <li><em>卡号</em></li>
+                        </ul>
+                    </div> <!-- .cd-pricing-features -->
+
+                    <footer class="cd-pricing-footer">
+                        <a id="popup2" href="javascript:void(0)">查看</a>
+                    </footer> <!-- .cd-pricing-footer -->
+                </li>
+
+                <li>
+                    <header class="cd-pricing-header">
+                        <h2>随机验证交易</h2>
+
+                        <div class="cd-price">
+                            <span>...</span>
+                            <span>month</span>
+                        </div>
+                    </header> <!-- .cd-pricing-header -->
+
+                    <div class="cd-pricing-features">
+                        <ul class="Center-l popup-list-info">
+                            <li><em>交易时间</em></li>
+                            <li><em>商编</em></li>
+                            <li><em>终端</em></li>
+                            <li><em>卡号</em></li>
+                        </ul>
+                    </div> <!-- .cd-pricing-features -->
+
+                    <footer class="cd-pricing-footer">
+                        <a id="popup3" href="javascript:void(0)">查看</a>
+                    </footer> <!-- .cd-pricing-footer -->
+                </li>
+            </ul>
+
+            <div class="infoPopup-code">
+
+                <div id="popup1-code" class="cd-form">
+
+                    <div class="cd-plan-info">
+                        <!-- content will be loaded using jQuery - according to the selected plan -->
+                    </div>
+
+                    <div class="cd-more-info">
+                        <h3>Mark</h3>
+                        <p>All thing are difficult before they are easy.</p>
+                    </div>
+
+                    <form>
+                        <fieldset>
+                            <legend>商户层授信信息</legend>
+                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 alignStyle font-color-blue">
+                                <div>
+                                    <span>商户经营省份</span>
+                                </div>
+                                <small>上海</small>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 alignStyle font-color-blue">
+                                <div>
+                                    <span>拟融金额(元)</span>
+                                </div>
+                                <small>0.00</small>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 alignStyle font-color-blue">
+                                <div>
+                                    <span>拟融期限(天)</span>
+                                </div>
+                                <small>3</small>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 alignStyle font-color-blue">
+                                <div>
+                                    <span>授信等级</span>
+                                </div>
+                                <small>3</small>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 alignStyle font-color-blue">
+                                <div>
+                                    <span>月活动频率R</span>
+                                </div>
+                                <small>3.0</small>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 alignStyle font-color-blue">
+                                <div>
+                                    <span>月均活动频率A</span>
+                                </div>
+                                <small>2.0</small>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 alignStyle font-color-blue">
+                                <div>
+                                    <span>日均刷卡笔数F</span>
+                                </div>
+                                <small>1.25</small>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 alignStyle font-color-blue">
+                                <div>
+                                    <span>日均客单价M</span>
+                                </div>
+                                <small>35,941.00</small>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 alignStyle font-color-blue">
+                                <div>
+                                    <span>月均刷卡额值P</span>
+                                </div>
+                                <small>651446541</small>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 alignStyle font-color-blue">
+                                <div>
+                                    <span>最近月刷卡额L</span>
+                                </div>
+                                <small>40183.00</small>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 alignStyle font-color-blue">
+                                <div>
+                                    <span>综合标准额度</span>
+                                </div>
+                                <small>40183</small>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 alignStyle font-color-blue">
+                                <div>
+                                    <span>实际商编额度</span>
+                                </div>
+                                <small>40183</small>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 alignStyle font-color-blue">
+                                <div>
+                                    <span>综合额度180天</span>
+                                </div>
+                                <small>40183</small>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 alignStyle font-color-blue">
+                                <div>
+                                    <span>合计商编额度</span>
+                                </div>
+                                <small>40183</small>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 alignStyle font-color-blue">
+                                <div>
+                                    <span>联合商编额度</span>
+                                </div>
+                                <small>40183</small>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 alignStyle font-color-blue">
+                                <div>
+                                    <span>连续交易月数</span>
+                                </div>
+                                <small>40183</small>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 alignStyle font-color-blue">
+                                <div>
+                                    <span>额度生效日</span>
+                                </div>
+                                <small>2015-12-01</small>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 alignStyle font-color-blue">
+                                <div>
+                                    <span>额度失效日</span>
+                                </div>
+                                <small>2016-01-01</small>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 alignStyle font-color-blue">
+                                <div>
+                                    <span>授信MCC类型</span>
+                                </div>
+                                <small>40183</small>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 alignStyle font-color-blue">
+                                <div>
+                                    <span>授信MCC编号</span>
+                                </div>
+                                <small>40183</small>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 alignStyle font-color-blue">
+                                <div>
+                                    <span>授信评分</span>
+                                </div>
+                                <small>40183</small>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 alignStyle font-color-blue">
+                                <div>
+                                    <span>POS交易稳定性</span>
+                                </div>
+                                <small>40183</small>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 alignStyle font-color-blue">
+                                <div>
+                                    <span>POS交易成长性</span>
+                                </div>
+                                <small>40183</small>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 alignStyle font-color-blue">
+                                <div>
+                                    <span>总交易月数</span>
+                                </div>
+                                <small>40183</small>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 alignStyle font-color-blue">
+                                <div>
+                                    <span>保理费率</span>
+                                </div>
+                                <small>40183</small>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 alignStyle font-color-blue">
+                                <div>
+                                    <span>渠道来源</span>
+                                </div>
+                                <small>40183</small>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 alignStyle font-color-blue">
+                                <div>
+                                    <span>达标标志</span>
+                                </div>
+                                <small>40183</small>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 alignStyle font-color-blue">
+                                <div>
+                                    <span>评分卡分数</span>
+                                </div>
+                                <small>40183</small>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 alignStyle font-color-blue">
+                                <div>
+                                    <span>评分卡描述</span>
+                                </div>
+                                <small>40183</small>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 alignStyle font-color-blue">
+                                <div>
+                                    <span>POS基础额度</span>
+                                </div>
+                                <small>40183</small>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 alignStyle font-color-blue">
+                                <div>
+                                    <span>实际商编标准额度180天</span>
+                                </div>
+                                <small>40183</small>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>汇总</legend>
+                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 alignStyle text-center font-color-blue">
+                                <span class="col-xs-12 col-sm-12 col-md-12 col-lg-12 padding-tb-5 background-aqua">
+                                    贷记卡占比
+                                </span>
+                                <smail class="col-xs-12 col-sm-12 col-md-12 col-lg-12 padding-tb-5 font-color-bleck">
+                                    123123
+                                </smail>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 alignStyle text-center font-color-blue">
+                                <span class="col-xs-12 col-sm-12 col-md-12 col-lg-12 padding-tb-5 background-aqua">
+                                    疑似套现占比
+                                </span>
+                                <smail class="col-xs-12 col-sm-12 col-md-12 col-lg-12 padding-tb-5 font-color-bleck">
+                                    生活用品零售店
+                                </smail>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 alignStyle text-center font-color-blue">
+                                <span class="col-xs-12 col-sm-12 col-md-12 col-lg-12 padding-tb-5 background-aqua">
+                                    大额整数占比
+                                </span>
+                                <smail class="col-xs-12 col-sm-12 col-md-12 col-lg-12 padding-tb-5 font-color-bleck">
+                                    其他专门零售店
+                                </smail>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 alignStyle text-center font-color-blue">
+                                <span class="col-xs-12 col-sm-12 col-md-12 col-lg-12 padding-tb-5 background-aqua">
+                                    有效借记卡交易笔数
+                                </span>
+                                <smail class="col-xs-12 col-sm-12 col-md-12 col-lg-12 padding-tb-5 font-color-bleck">
+                                    123123
+                                </smail>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 alignStyle text-center font-color-blue">
+                                <span class="col-xs-12 col-sm-12 col-md-12 col-lg-12 padding-tb-5 background-aqua">
+                                    有效借记卡交易金额
+                                </span>
+                                <smail class="col-xs-12 col-sm-12 col-md-12 col-lg-12 padding-tb-5 font-color-bleck">
+                                    123123
+                                </smail>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 alignStyle text-center font-color-blue">
+                                <span class="col-xs-12 col-sm-12 col-md-12 col-lg-12 padding-tb-5 background-aqua">
+                                    借记卡客单价
+                                </span>
+                                <smail class="col-xs-12 col-sm-12 col-md-12 col-lg-12 padding-tb-5 font-color-bleck">
+                                    123123
+                                </smail>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 alignStyle text-center font-color-blue">
+                                <span class="col-xs-12 col-sm-12 col-md-12 col-lg-12 padding-tb-5 background-aqua">
+                                    有效(准)贷记卡交易笔数
+                                </span>
+                                <smail class="col-xs-12 col-sm-12 col-md-12 col-lg-12 padding-tb-5 font-color-bleck">
+                                    123123
+                                </smail>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 alignStyle text-center font-color-blue">
+                                <span class="col-xs-12 col-sm-12 col-md-12 col-lg-12 padding-tb-5 background-aqua">
+                                    有效(准)贷记卡交易金额
+                                </span>
+                                <smail class="col-xs-12 col-sm-12 col-md-12 col-lg-12 padding-tb-5 font-color-bleck">
+                                    123123
+                                </smail>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 alignStyle text-center font-color-blue">
+                                <span class="col-xs-12 col-sm-12 col-md-12 col-lg-12 padding-tb-5 background-aqua">
+                                    贷记卡客单价
+                                </span>
+                                <smail class="col-xs-12 col-sm-12 col-md-12 col-lg-12 padding-tb-5 font-color-bleck">
+                                    123123
+                                </smail>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>每月交易情况汇总</legend>
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 padding-b-12">
+                                <div class="overflow-x">
+                                    <table class="table table-hover tabStyleWidth tabStyle">
+                                        <thead>
+                                        <tr class="border-b">
+                                            <th>TM</th>
+                                            <th>R</th>
+                                            <th>EF</th>
+                                            <th>EA</th>
+                                            <th>DF</th>
+                                            <th>DA</th>
+                                            <th>DT</th>
+                                            <th></th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>1-关联POS</td>
+                                            <td>30</td>
+                                            <td>10000.00</td>
+                                            <td>0.111</td>
+                                            <td>30</td>
+                                            <td>10000.00</td>
+                                            <td>0000000000000000000000000000000</td>
+                                            <td>更多</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1-关联POS</td>
+                                            <td>30</td>
+                                            <td>10000.00</td>
+                                            <td>0.111</td>
+                                            <td>30</td>
+                                            <td>10000.00</td>
+                                            <td>0000000000000000000000000000000</td>
+                                            <td>更多</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1-关联POS</td>
+                                            <td>30</td>
+                                            <td>10000.00</td>
+                                            <td>0.111</td>
+                                            <td>30</td>
+                                            <td>10000.00</td>
+                                            <td>0000000000000000000000000000000</td>
+                                            <td>更多</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1-关联POS</td>
+                                            <td>30</td>
+                                            <td>10000.00</td>
+                                            <td>0.111</td>
+                                            <td>30</td>
+                                            <td>10000.00</td>
+                                            <td>0000000000000000000000000000000</td>
+                                            <td>更多</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                            </div>
+                        </fieldset>
+
+                        <!--<fieldset>
+                            <div>
+                                <input type="submit" value="Get started">
+                            </div>
+                        </fieldset>-->
+                    </form>
+
+                    <a href="#0" class="cd-close"></a>
+                </div> <!-- .cd-form -->
+
+
+
+                <!--<div id="popup2-code" class="cd-form">
+
+                    <div class="cd-plan-info">
+                        &lt;!&ndash; content will be loaded using jQuery - according to the selected plan &ndash;&gt;
+                    </div>
+
+                    <div class="cd-more-info">
+                        <h3>Mark</h3>
+                        <p>Nur immerzu dieselbe Lügen,und über kurz oder lang wird sie als Wahrheit gehandelt.</p>
+                    </div>
+
+                    <form>
+                        <fieldset>
+                            <legend>商编层授信信息</legend>
+                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 alignStyle font-color-blue">
+                                <div>
+                                    <span>商编授信申请编号</span>
+                                </div>
+                                <small>212221</small>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 alignStyle font-color-blue">
+                                <div>
+                                    <span>商户编号MID</span>
+                                </div>
+                                <small>12321131231223111</small>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 alignStyle font-color-blue">
+                                <div>
+                                    <span>商编登记名称</span>
+                                </div>
+                                <small>啊啊啊啊啊啊啊啊啊</small>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 alignStyle font-color-blue">
+                                <div>
+                                    <span>商编授信状态</span>
+                                </div>
+                                <small>success</small>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 alignStyle font-color-blue">
+                                <div>
+                                    <span>商编授信状态详情</span>
+                                </div>
+                                <small>success</small>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 alignStyle font-color-blue">
+                                <div>
+                                    <span>商编授信状态详情</span>
+                                </div>
+                                <small>Calculate Credit, success</small>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 alignStyle font-color-blue">
+                                <div>
+                                    <span>POS机具数量</span>
+                                </div>
+                                <small>0.00</small>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 alignStyle font-color-blue">
+                                <div>
+                                    <span>MCC名称</span>
+                                </div>
+                                <small>啊啊啊</small>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 alignStyle font-color-blue">
+                                <div>
+                                    <span>MCC编号</span>
+                                </div>
+                                <small>0</small>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 alignStyle font-color-blue">
+                                <div>
+                                    <span>地址</span>
+                                </div>
+                                <small>3.0</small>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 alignStyle font-color-blue">
+                                <div>
+                                    <span>收入金额</span>
+                                </div>
+                                <small>2.0</small>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 alignStyle font-color-blue">
+                                <div>
+                                    <span>支出金额</span>
+                                </div>
+                                <small>1.25</small>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 alignStyle font-color-blue">
+                                <div>
+                                    <span>交易笔数</span>
+                                </div>
+                                <small>35,941.00</small>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 alignStyle font-color-blue">
+                                <div>
+                                    <span>开始交易日期</span>
+                                </div>
+                                <small>651446541</small>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 alignStyle font-color-blue">
+                                <div>
+                                    <span>结束交易日期</span>
+                                </div>
+                                <small>40183.00</small>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 alignStyle font-color-blue">
+                                <div>
+                                    <span>最近月活动频率R</span>
+                                </div>
+                                <small>40183</small>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 alignStyle font-color-blue">
+                                <div>
+                                    <span>月均活动频率A</span>
+                                </div>
+                                <small>40183</small>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 alignStyle font-color-blue">
+                                <div>
+                                    <span>日均刷卡笔数F</span>
+                                </div>
+                                <small>40183</small>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 alignStyle font-color-blue">
+                                <div>
+                                    <span>日均客单价M</span>
+                                </div>
+                                <small>40183</small>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 alignStyle font-color-blue">
+                                <div>
+                                    <span>月均刷卡额值P</span>
+                                </div>
+                                <small>40183</small>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 alignStyle font-color-blue">
+                                <div>
+                                    <span>最近月刷卡额L</span>
+                                </div>
+                                <small>40183</small>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 alignStyle font-color-blue">
+                                <div>
+                                    <span>商编授信额度</span>
+                                </div>
+                                <small>40183</small>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 alignStyle font-color-blue">
+                                <div>
+                                    <span>商编授信额度180天</span>
+                                </div>
+                                <small>2015-12-01</small>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 alignStyle font-color-blue">
+                                <div>
+                                    <span>交易稳定性</span>
+                                </div>
+                                <small>2016-01-01</small>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 alignStyle font-color-blue">
+                                <div>
+                                    <span>交易成长性</span>
+                                </div>
+                                <small>40183</small>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 alignStyle font-color-blue">
+                                <div>
+                                    <span>总交易月数</span>
+                                </div>
+                                <small>40183</small>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 alignStyle font-color-blue">
+                                <div>
+                                    <span>授信等级</span>
+                                </div>
+                                <small>40183</small>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 alignStyle font-color-blue">
+                                <div>
+                                    <span>授信评分</span>
+                                </div>
+                                <small>40183</small>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 alignStyle font-color-blue">
+                                <div>
+                                    <span>最近连续交易月数</span>
+                                </div>
+                                <small>40183</small>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 alignStyle font-color-blue">
+                                <div>
+                                    <span>达标标志</span>
+                                </div>
+                                <small>40183</small>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 alignStyle font-color-blue">
+                                <div>
+                                    <span>终端编号</span>
+                                </div>
+                                <small>40183</small>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 alignStyle font-color-blue">
+                                <div>
+                                    <span>是否验证</span>
+                                </div>
+                                <select class="col-lg-12">
+                                    <option value=""></option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                </select>
+                            </div>
+                        </fieldset>
+                    </form>
+
+                    <a href="#0" class="cd-close"></a>
+                </div>--> <!-- .cd-form -->
+
+                <div id="popup3-code" class="cd-form">
+
+                    <div class="cd-plan-info">
+                        <!-- content will be loaded using jQuery - according to the selected plan -->
+                    </div>
+
+                    <div class="cd-more-info">
+                        <h3>Mark</h3>
+                        <p>Nichts leichter als einen Vorsatz zu fassen,den man ohnehin nicht verwirklichen will. </p>
+                    </div>
+
+                    <form>
+                        <fieldset>
+                            <legend>随机验证交易</legend>
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 padding-b-30">
+                                <div class="overflow-x width600">
+                                    <table class="table table-hover tabStyleWidth tabStyle">
+                                        <thead>
+                                            <tr class="border-b">
+                                                <th>交易时间</th>
+                                                <th>商编</th>
+                                                <th>终端</th>
+                                                <th>卡号</th>
+                                                <th>币种</th>
+                                                <th>金额</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>2015-11-17 21:03:21.0</td>
+                                                <td>838**8462</td>
+                                                <td>838**8462</td>
+                                                <td>838**8462</td>
+                                                <td>人民币</td>
+                                                <td>838**8462</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2015-11-17 21:03:21.0</td>
+                                                <td>838**8462</td>
+                                                <td>838**8462</td>
+                                                <td>838**8462</td>
+                                                <td>人民币</td>
+                                                <td>838**8462</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2015-11-17 21:03:21.0</td>
+                                                <td>838**8462</td>
+                                                <td>838**8462</td>
+                                                <td>838**8462</td>
+                                                <td>人民币</td>
+                                                <td>838**8462</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2015-11-17 21:03:21.0</td>
+                                                <td>838**8462</td>
+                                                <td>838**8462</td>
+                                                <td>838**8462</td>
+                                                <td>人民币</td>
+                                                <td>838**8462</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2015-11-17 21:03:21.0</td>
+                                                <td>838**8462</td>
+                                                <td>838**8462</td>
+                                                <td>838**8462</td>
+                                                <td>人民币</td>
+                                                <td>838**8462</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2015-11-17 21:03:21.0</td>
+                                                <td>838**8462</td>
+                                                <td>838**8462</td>
+                                                <td>838**8462</td>
+                                                <td>人民币</td>
+                                                <td>838**8462</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2015-11-17 21:03:21.0</td>
+                                                <td>838**8462</td>
+                                                <td>838**8462</td>
+                                                <td>838**8462</td>
+                                                <td>人民币</td>
+                                                <td>838**8462</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                        </fieldset>
+                    </form>
+
+                    <a href="#0" class="cd-close"></a>
+                </div> <!-- .cd-form -->
+
+
+                <div id="popup2-code" class="cd-form">
+
+                    <div class="cd-plan-info">
+                        <!-- content will be loaded using jQuery - according to the selected plan -->
+                    </div>
+
+                    <div class="cd-more-info">
+                        <h3>Mark</h3>
+                        <p>Nichts leichter als einen Vorsatz zu fassen,den man ohnehin nicht verwirklichen will. </p>
+                    </div>
+
+                    <form>
+                        <fieldset>
+                            <legend>基础额度</legend>
+                            <section class="col-xs-12 col-sm-12 col-md-12 col-lg-12 padding-b-12">
+                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 alignStyle text-center font-color-blue">
+                                    <span class="col-xs-12 col-sm-12 col-md-12 col-lg-12 padding-tb-5 background-aqua">
+                                        基础授信额度
+                                    </span>
+                                    <smail class="col-xs-12 col-sm-12 col-md-12 col-lg-12 padding-tb-5 font-color-bleck">
+                                        123123
+                                    </smail>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 alignStyle text-center font-color-blue">
+                                    <span class="col-xs-12 col-sm-12 col-md-12 col-lg-12 padding-tb-5 background-aqua">
+                                        行业一级分类
+                                    </span>
+                                    <smail class="col-xs-12 col-sm-12 col-md-12 col-lg-12 padding-tb-5 font-color-bleck">
+                                        生活用品零售店
+                                    </smail>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 alignStyle text-center font-color-blue">
+                                    <span class="col-xs-12 col-sm-12 col-md-12 col-lg-12 padding-tb-5 background-aqua">
+                                        行业二级分类
+                                    </span>
+                                    <smail class="col-xs-12 col-sm-12 col-md-12 col-lg-12 padding-tb-5 font-color-bleck">
+                                        其他专门零售店
+                                    </smail>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 alignStyle text-center font-color-blue">
+                                    <span class="col-xs-12 col-sm-12 col-md-12 col-lg-12 padding-tb-5 background-aqua">
+                                        营业面积
+                                    </span>
+                                    <smail class="col-xs-12 col-sm-12 col-md-12 col-lg-12 padding-tb-5 font-color-bleck">
+                                        123123
+                                    </smail>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 alignStyle text-center font-color-blue">
+                                    <span class="col-xs-12 col-sm-12 col-md-12 col-lg-12 padding-tb-5 background-aqua">
+                                        门店数
+                                    </span>
+                                    <smail class="col-xs-12 col-sm-12 col-md-12 col-lg-12 padding-tb-5 font-color-bleck">
+                                        123123
+                                    </smail>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 alignStyle text-center font-color-blue">
+                                    <span class="col-xs-12 col-sm-12 col-md-12 col-lg-12 padding-tb-5 background-aqua">
+                                        营业执照开始时间
+                                    </span>
+                                    <smail class="col-xs-12 col-sm-12 col-md-12 col-lg-12 padding-tb-5 font-color-bleck">
+                                        123123
+                                    </smail>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 alignStyle text-center font-color-blue">
+                                    <span class="col-xs-12 col-sm-12 col-md-12 col-lg-12 padding-tb-5 background-aqua">
+                                        城市名字
+                                    </span>
+                                    <smail class="col-xs-12 col-sm-12 col-md-12 col-lg-12 padding-tb-5 font-color-bleck">
+                                        123123
+                                    </smail>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 alignStyle text-center font-color-blue">
+                                    <span class="col-xs-12 col-sm-12 col-md-12 col-lg-12 padding-tb-5 background-aqua">
+                                        学历
+                                    </span>
+                                    <smail class="col-xs-12 col-sm-12 col-md-12 col-lg-12 padding-tb-5 font-color-bleck">
+                                        123123
+                                    </smail>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 alignStyle text-center font-color-blue">
+                                    <span class="col-xs-12 col-sm-12 col-md-12 col-lg-12 padding-tb-5 background-aqua">
+                                        是否本地户口
+                                    </span>
+                                    <smail class="col-xs-12 col-sm-12 col-md-12 col-lg-12 padding-tb-5 font-color-bleck">
+                                        123123
+                                    </smail>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 alignStyle text-center font-color-blue">
+                                    <span class="col-xs-12 col-sm-12 col-md-12 col-lg-12 padding-tb-5 background-aqua">
+                                        门店物业性质租赁
+                                    </span>
+                                    <smail class="col-xs-12 col-sm-12 c-12 col-lg-12 padding-tb-5 font-color-bleck">
+                                        123123
+                                    </smail>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 alignStyle text-center font-color-blue">
+                                    <span class="col-xs-12 col-sm-12 col-md-12 col-lg-12 padding-tb-5 background-aqua">
+                                        调整后基础授信额度
+                                    </span>
+                                    <smail class="col-xs-12 col-sm-12 col-md-12 col-lg-12 padding-tb-5 font-color-bleck">
+                                        123123
+                                    </smail>
+                                </div>
+                            </section>
+                        </fieldset>
+                    </form>
+
+                    <a href="#0" class="cd-close"></a>
+                </div>
+
+
+            </div><!--infoPopup-code-->
+            <div class="cd-overlay"></div> <!-- shadow layer -->
+        </section>
+
+
+
+    </div>
+
+</div>
+
+
+
+<!--添加商编模态框 #addMidModal-->
+<div id="addMidModal" class="modal fade" role="dialog" aria-labelledby="gridSystemModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h3 class="modal-title">添加商编</h3>
+            </div>
+            <div class="modal-body">
+                <div class="addMidModalBody alignStyle">
+                    <div class="padding-b-5">
+                        <span>商户编号：</span>
+                    </div>
+                    <input class="col-xs-12 col-sm-11 col-md-11 col-lg-11" type="text" value="12212121221">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-redGray btn-shadow" data-dismiss="modal">关闭</button>
+                <button type="button" class="btn btn-griege btn-shadow" data-dismiss="modal">添加</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div>
+</div>
+
+
+
+<!--商编信息模态框 #addMidModal-->
+<div id="midSingleModal" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h3 class="modal-title">商编详情</h3>
+            </div>
+            <div class="modal-body col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <h4 class="col-xs-12 col-sm-12 col-md-12 col-lg-12 padding-b-20">授信信息</h4>
+                <div class="margin-lr-30">
+                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 alignStyle font-color-blue">
+                        <div>
+                            <span>商编授信申请编号</span>
+                        </div>
+                        <small>212221</small>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 alignStyle font-color-blue">
+                        <div>
+                            <span>商户编号MID</span>
+                        </div>
+                        <small>12321131231223111</small>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 alignStyle font-color-blue">
+                        <div>
+                            <span>商编登记名称</span>
+                        </div>
+                        <small>啊啊啊啊啊啊啊啊啊</small>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 alignStyle font-color-blue">
+                        <div>
+                            <span>商编授信状态</span>
+                        </div>
+                        <small>success</small>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 alignStyle font-color-blue">
+                        <div>
+                            <span>商编授信状态详情</span>
+                        </div>
+                        <small>success</small>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 alignStyle font-color-blue">
+                        <div>
+                            <span>商编授信状态详情</span>
+                        </div>
+                        <small>Calculate Credit, success</small>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 alignStyle font-color-blue">
+                        <div>
+                            <span>POS机具数量</span>
+                        </div>
+                        <small>0.00</small>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 alignStyle font-color-blue">
+                        <div>
+                            <span>MCC名称</span>
+                        </div>
+                        <small>啊啊啊</small>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 alignStyle font-color-blue">
+                        <div>
+                            <span>MCC编号</span>
+                        </div>
+                        <small>0</small>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 alignStyle font-color-blue">
+                        <div>
+                            <span>地址</span>
+                        </div>
+                        <small>3.0</small>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 alignStyle font-color-blue">
+                        <div>
+                            <span>收入金额</span>
+                        </div>
+                        <small>2.0</small>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 alignStyle font-color-blue">
+                        <div>
+                            <span>支出金额</span>
+                        </div>
+                        <small>1.25</small>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 alignStyle font-color-blue">
+                        <div>
+                            <span>交易笔数</span>
+                        </div>
+                        <small>35,941.00</small>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 alignStyle font-color-blue">
+                        <div>
+                            <span>开始交易日期</span>
+                        </div>
+                        <small>651446541</small>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 alignStyle font-color-blue">
+                        <div>
+                            <span>结束交易日期</span>
+                        </div>
+                        <small>40183.00</small>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 alignStyle font-color-blue">
+                        <div>
+                            <span>最近月活动频率R</span>
+                        </div>
+                        <small>40183</small>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 alignStyle font-color-blue">
+                        <div>
+                            <span>月均活动频率A</span>
+                        </div>
+                        <small>40183</small>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 alignStyle font-color-blue">
+                        <div>
+                            <span>日均刷卡笔数F</span>
+                        </div>
+                        <small>40183</small>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 alignStyle font-color-blue">
+                        <div>
+                            <span>日均客单价M</span>
+                        </div>
+                        <small>40183</small>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 alignStyle font-color-blue">
+                        <div>
+                            <span>月均刷卡额值P</span>
+                        </div>
+                        <small>40183</small>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 alignStyle font-color-blue">
+                        <div>
+                            <span>最近月刷卡额L</span>
+                        </div>
+                        <small>40183</small>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 alignStyle font-color-blue">
+                        <div>
+                            <span>商编授信额度</span>
+                        </div>
+                        <small>40183</small>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 alignStyle font-color-blue">
+                        <div>
+                            <span>商编授信额度180天</span>
+                        </div>
+                        <small>2015-12-01</small>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 alignStyle font-color-blue">
+                        <div>
+                            <span>交易稳定性</span>
+                        </div>
+                        <small>2016-01-01</small>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 alignStyle font-color-blue">
+                        <div>
+                            <span>交易成长性</span>
+                        </div>
+                        <small>40183</small>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 alignStyle font-color-blue">
+                        <div>
+                            <span>总交易月数</span>
+                        </div>
+                        <small>40183</small>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 alignStyle font-color-blue">
+                        <div>
+                            <span>授信等级</span>
+                        </div>
+                        <small>40183</small>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 alignStyle font-color-blue">
+                        <div>
+                            <span>授信评分</span>
+                        </div>
+                        <small>40183</small>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 alignStyle font-color-blue">
+                        <div>
+                            <span>最近连续交易月数</span>
+                        </div>
+                        <small>40183</small>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 alignStyle font-color-blue">
+                        <div>
+                            <span>达标标志</span>
+                        </div>
+                        <small>40183</small>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 alignStyle font-color-blue">
+                        <div>
+                            <span>终端编号</span>
+                        </div>
+                        <small>40183</small>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 alignStyle font-color-blue">
+                        <div>
+                            <span>是否验证</span>
+                        </div>
+                        <select class="col-lg-12">
+                            <option value=""></option>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                        </select>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="col-xs-12 col-sm-12 col-md-12 col-lg-12 padding-b-20">统计信息</h4>
+
+
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 padding-b-30">
+                        <!--页面内部标题-->
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 padding-b-10 inside-page-title">
+                            <span>每月交易情况</span>
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                <i class="col-xs-12 col-sm-12 col-md-9 col-lg-7"></i>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 padding-b-12">
+                            <div class="overflow-x width600">
+                                <table class="table table-hover tabStyleWidth tabStyle">
+                                    <thead>
+                                        <tr class="border-b">
+                                            <th>TM</th>
+                                            <th>R</th>
+                                            <th>EF</th>
+                                            <th>EA</th>
+                                            <th>DF</th>
+                                            <th>DA</th>
+                                            <th>DT</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1-关联POS</td>
+                                            <td>30</td>
+                                            <td>10000.00</td>
+                                            <td>0.111</td>
+                                            <td>30</td>
+                                            <td>10000.00</td>
+                                            <td>0000000000000000000000000000000</td>
+                                            <td>更多</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1-关联POS</td>
+                                            <td>30</td>
+                                            <td>10000.00</td>
+                                            <td>0.111</td>
+                                            <td>30</td>
+                                            <td>10000.00</td>
+                                            <td>0000000000000000000000000000000</td>
+                                            <td>更多</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1-关联POS</td>
+                                            <td>30</td>
+                                            <td>10000.00</td>
+                                            <td>0.111</td>
+                                            <td>30</td>
+                                            <td>10000.00</td>
+                                            <td>0000000000000000000000000000000</td>
+                                            <td>更多</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1-关联POS</td>
+                                            <td>30</td>
+                                            <td>10000.00</td>
+                                            <td>0.111</td>
+                                            <td>30</td>
+                                            <td>10000.00</td>
+                                            <td>0000000000000000000000000000000</td>
+                                            <td>更多</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-redGray btn-shadow" data-dismiss="modal">关闭</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div>
+</div>
+
+
+<!--添加商编模态框 #addMidModal-->
+<div id="midVerifyModal" class="modal fade" role="dialog" aria-labelledby="gridSystemModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h3 class="modal-title">验证商编</h3>
+            </div>
+            <div class="modal-body col-xs-12 col-sm-12 col-md-12 col-lg-12 padding-b-40">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 center margin-tb-30 font-size16 font-bold">
+                    有一只熊掉到一个陷阱里，陷阱深19.617米，下落时间正好2秒。求熊是什么颜色的？
+                </div>
+                <ul class="col-xs-12 col-sm-12 col-md-12 col-lg-12 margin-tb-20 margin-l-15">
+                    <li class="verifyBox alignStyle font-color-blue"><input id="verifyBox1" type="checkbox"/><label class="padding-lr-10 cursor" for="verifyBox1">白色</label></li>
+                    <li class="verifyBox alignStyle font-color-blue"><input id="verifyBox2" type="checkbox"/><label class="padding-lr-10 cursor" for="verifyBox2">棕色</label></li>
+                    <li class="verifyBox alignStyle font-color-blue"><input id="verifyBox3" type="checkbox"/><label class="padding-lr-10 cursor" for="verifyBox3">黑色</label></li>
+                    <li class="verifyBox alignStyle font-color-blue"><input id="verifyBox4" type="checkbox"/><label class="padding-lr-10 cursor" for="verifyBox4">黑棕色</label></li>
+                    <li class="verifyBox alignStyle font-color-blue"><input id="verifyBox5" type="checkbox"/><label class="padding-lr-10 cursor" for="verifyBox5">灰色</label></li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-spearmint btn-shadow" data-dismiss="modal">提交</button>
+                <button type="button" class="btn btn-redGray btn-shadow" data-dismiss="modal">关闭</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div>
+</div>
+
+
+
+<!--弹窗动画插件-->
+<script src="../library/infoShowPopup/js/main.js"></script>
+

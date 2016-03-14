@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="zh-CN" ng-app="myApp">
+<head>
+
+    <link rel="icon" href="files/img/logo.jpg" type="image/x-icon"/>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="keywords" content="卡得万利,贷款,融资,授信" />
+
+    <!--引入bootstrap核心文件-->
+    <link rel="stylesheet" href="boostrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="boostrap/css/bootstrap-theme.min.css"/>
+
+    <!--fontawesomeCSS-->
+    <link rel="stylesheet" href="library/font-awesome/css/font-awesome.min.css"/>
+
+    <!--信息展示弹窗插件-->
+    <!-- <link rel="stylesheet" href="library/infoShowPopup/css/reset.css"> --><!-- CSS reset -->
+    <link rel="stylesheet" type="text/css" href="library/infoShowPopup/css/default.css">
+    <link rel="stylesheet" href="library/infoShowPopup/css/style.css"> <!-- Resource style -->
+
+    <!--通用CSS-->
+    <link rel="stylesheet" href="template/css/common.css"/>
+
+    <!--login界面引入-->
+
+    <link rel="stylesheet" href="./template/css/login-styles.css"/>
+
+
+</head>
+<body>
+    <div class="outermost">
+        <div class="vessel">
+            <div class="menu-wrap"><!--左侧菜单栏-->
+                <nav ng-if="menuUl" class="meun-main-nav padding-t-30 center">
+                    <ul>
+                        <li class="menu-item menu-item-anima">
+                            <a class="{{menuItemFocus1}} {{menuItemFocus}}" href="#/credit/12345/creditInfo">
+                                <i class="fa fa-tty font-size20"></i> 授信信息
+                            </a>
+                        </li>
+                        <li class="menu-item menu-item-anima">
+                            <a class="{{menuItemFocus2}}" href="#/credit/12345/midInfo">
+                                <i class="fa fa-credit-card font-size20"></i> 授信管理
+                            </a>
+                        </li>
+                        <!--<li class="menu-item menu-item-anima">
+                            <a class="{{menuItemFocus3}}" href="#/credit/12345/updateApplication">
+                                <i class="fa fa-tree font-size20"></i> 修改申请
+                            </a>
+                        </li>
+                        <li class="menu-item menu-item-anima">
+                            <a class="{{menuItemFocus4}}" href="#/credit/12345/updateMid">
+                                <i class="fa fa-tag font-size20"></i> 商编管理
+                            </a>
+                        </li>
+                        <li class="menu-item menu-item-anima">
+                            <a class="{{menuItemFocus5}}" href="#/credit/12345/addAmount">
+                                <i class="fa fa-outdent font-size20"></i> 新增额度
+                            </a>
+                        </li>
+                        <li class="menu-item menu-item-anima">
+                            <a class="{{menuItemFocus6}}" href="#/credit/12345/merchantStatistics">
+                                <i class="fa fa-list-alt font-size20"></i> 商户统计
+                            </a>
+                        </li>
+                        <li class="menu-item menu-item-anima">
+                            <a class="{{menuItemFocus7}}" href="#/credit/12345/midStatistics">
+                                <i class="fa fa-list-alt font-size20"></i> 商编统计
+                            </a>
+                        </li>-->
+                    </ul>
+                </nav>
+                <footer class="menu-main-footer">
+                    <ul class="big-catalog">
+                        <li onclick="closeMenu()" class="big-catalog-anima"><a class="big-catalog-focus credit-list padding-tb-20" ng-href="#/creditList">商户列表</a></li>
+                    </ul>
+                </footer>
+            </div>
+            <div aria-disabled="true" class="wrap">
+                <header class="main-header" role="banner"><!--顶部-->
+                    <a  onclick="closeMenu()" ng-href="#/dashboard"><span class="pull-right font-weight7 blog-title">Credit</span></a>
+                    <div class="nav-main-left pull-left">
+                        <div class="nav-main-button">
+                            <div onclick="menuCtrl(this)" class="hamburger menu-ctrl">
+                                <div class="line line1">
+                                    <div class="line-son"></div>
+                                </div>
+                                <div class="line line2">
+                                    <div class="line-son"></div>
+                                </div>
+                                <div class="line line3">
+                                    <div class="line-son"></div>
+                                </div>
+                            </div>
+                            <span class="nav-vertical-line"></span>
+                        </div>
+                        <div onclick="menuCtrl(this)" class="nav-main-text menu-ctrl">
+                            <span class="menu-text">MENU</span>
+                        </div>
+                    </div>
+                </header>
+
+                <div class="page-box"><!--页面内部盒子-->
+                    <div class="page-main" ng-view></div>
+                </div>
+            </div>
+            <div class="menuOpenShade"></div>
+        </div><!--vessel-->
+
+        <div class="netMonitor">
+            <div class="netMonitor-tiny">
+                <span>请登录</span>
+            </div>
+            <div class="netMonitor-big"></div>
+        </div>
+
+        <div id="login" class="login">
+            <div class="htmleaf-container">
+                <div class="wrapper">
+                    <div class="container">
+                        <h1 class="font-color-white">授信系统</h1>
+
+                        <form class="form login-form">
+                            <input class="login-title login-color" type="text" placeholder="请输入账户">
+                            <input class="login-color" type="text" placeholder="请输入密码">
+                            <button onclick="loginOk()" type="submit" id="login-button">登 录</button>
+                        </form>
+                    </div>
+
+                    <ul class="bg-bubbles">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--<div class="load">
+        <div class="leftSpin"><div class="Spin"></div></div>
+        <div class="rightSpin"><div class="Spin"></div></div>
+    </div>-->
+
+
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="boostrap/js/bootstrap.min.js"></script>
+
+    <!--信息展示弹窗插件-->
+    <script src="library/infoShowPopup/js/velocity.min.js"></script>
+    <script src="library/infoShowPopup/js/main.js"></script>
+    <script src="library/infoShowPopup/js/modernizr.js"></script> <!-- Modernizr -->
+    <!--[if IE]>
+    <!--<script src="http://libs.useso.com/js/html5shiv/3.7/html5shiv.min.js"></script>-->
+    <!--<![endif]&ndash;&gt;--><!--信息弹窗插件所属，因延迟过大注释-->
+
+    <!--angular-->
+    <script src="library/angular/angular.min.js"></script>
+    <script src="library/angular-sanitize/angular-sanitize.min.js"></script>
+    <script src="library/angular-route/angular-route.min.js"></script>
+    <script src="library/angular-resource/angular-resource.min.js"></script>
+    <script src="library/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+
+    <script src="angular/app.js"></script>
+    <script src="angular/conctroller.js"></script>
+    <script src="angular/service.js"></script>
+    <script src="angular/list_controller.js"></script>
+    <script src="angular/credit_controller.js"></script>
+
+
+    <script src="js/browser.js"></script>
+    <script src="js/html5.js"></script>
+
+    <script src="js/common.js"></script>
+
+</body>
+</html>
